@@ -15,7 +15,7 @@
     <tbody>
         @foreach(var obj in Model.OrderBy(u=>u.DisplayOrder))
         {
-            <tr>
+            <tr class="table-primary">
                 <td>@obj.Name</td>
                 <td>@obj.DisplayOrder</td>
             </tr>
