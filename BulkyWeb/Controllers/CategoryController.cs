@@ -76,9 +76,6 @@ namespace BulkyWeb.Controllers
             }
 
             Category? categoryFromDB = _db.Categories.Find(id);
-            //Ways of capturing the Ids
-            //Category? categoryFromDB1 = _db.Categories.FirstOrDefault(u=>u.Id == id);
-            //Category? categoryFromDB2 = _db.Categories.Where(u=>u.Id == id).FirstOrDefault();
 
             if (categoryFromDB == null)
             {
